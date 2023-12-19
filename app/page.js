@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 import {
+  BsGithub,
   BsFacebook,
   BsFileEarmarkPersonFill,
   BsTelegram,
@@ -41,6 +42,14 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-3 mt-5 mb-12 md:mb-0">
             <Link
+              href="https://github.com/loonhtet"
+              className="flex items-center bg-slate-900 text-white gap-2 px-4 py-2 rounded-full"
+            >
+              <BsGithub className="text-2xl" />
+              <p className="hidden md:block font-ptsan">Github</p>
+            </Link>
+
+            <Link
               href=""
               className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
             >
@@ -49,7 +58,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href=""
+              href="https://t.me/loonhtet"
               className="flex items-center bg-indigo-800 text-white gap-2 px-4 py-2 rounded-full"
             >
               <BsTelegram className="text-2xl" />
