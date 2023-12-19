@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import {
+  BsGithub,
   BsFacebook,
   BsFileEarmarkPersonFill,
   BsTelegram,
@@ -57,21 +58,28 @@ export default function Info() {
 
       <div className="flex flex-wrap gap-x-5 gap-y-3 mt-10">
         <Link
-          href=""
+          href="https://github.com/loonhtet"
+          className="flex items-center bg-slate-900 text-white gap-2 px-4 py-2 rounded-full"
+        >
+          <BsGithub className="text-2xl" />
+        </Link>
+
+        <Link
+          href="https://www.facebook.com/loonhtet11.11/"
           className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsFacebook className="text-2xl" />
         </Link>
 
         <Link
-          href=""
+          href="https://t.me/loonhtet"
           className="flex items-center bg-indigo-800 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsTelegram className="text-2xl" />
         </Link>
 
         <Link
-          href=""
+          href="mailto:loonhtet.dev@gmail.com"
           className="flex items-center bg-zinc-700 text-white gap-2 px-4 py-2 rounded-full"
         >
           <AiFillMail className="text-2xl" />
@@ -79,6 +87,7 @@ export default function Info() {
 
         <Link
           href=""
+          download={"../public/CV.pdf"}
           className="flex items-center bg-emerald-700 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsFileEarmarkPersonFill className="text-2xl" />

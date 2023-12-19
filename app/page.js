@@ -50,7 +50,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href=""
+              href="https://www.facebook.com/loonhtet11.11/"
               className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
             >
               <BsFacebook className="text-2xl" />
@@ -66,7 +66,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href=""
+              href="mailto:loonhtet.dev@gmail.com"
               className="flex items-center bg-zinc-700 text-white gap-2 px-4 py-2 rounded-full"
             >
               <AiFillMail className="text-2xl" />
