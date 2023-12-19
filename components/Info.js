@@ -16,7 +16,7 @@ const infoDatas = [
 
   {
     info: "age",
-    description: 18,
+    description: 19,
   },
 
   {
