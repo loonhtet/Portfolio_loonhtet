@@ -35,6 +35,7 @@ const infoDatas = [
 ];
 
 import { AiFillMail } from "react-icons/ai";
+import { CareerObj } from "./CareerObj";
 
 export default function Info() {
   return (
@@ -83,6 +84,8 @@ export default function Info() {
           <BsFileEarmarkPersonFill className="text-2xl" />
         </Link>
       </div>
+
+      <CareerObj />
     </section>
   );
 }
