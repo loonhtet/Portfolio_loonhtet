@@ -73,13 +73,14 @@ export default function Home() {
               <p className="hidden md:block font-ptsan">Mail</p>
             </Link>
 
-            <Link
+            <a
               href=""
+              download={"../public/CV.pdf"}
               className="flex items-center bg-emerald-700 text-white gap-2 px-4 py-2 rounded-full"
             >
               <BsFileEarmarkPersonFill className="text-2xl" />
               <p className="hidden md:block font-ptsan">Resume</p>
-            </Link>
+            </a>
           </div>
         </div>
 
