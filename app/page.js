@@ -74,8 +74,8 @@ export default function Home() {
             </Link>
 
             <a
-              href=""
-              download={"../public/CV.pdf"}
+              href={"/CV.pdf"}
+              download="/Resume.pdf"
               className="flex items-center bg-emerald-700 text-white gap-2 px-4 py-2 rounded-full"
             >
               <BsFileEarmarkPersonFill className="text-2xl" />
