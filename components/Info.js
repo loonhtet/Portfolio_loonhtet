@@ -6,6 +6,7 @@ import {
   BsFileEarmarkPersonFill,
   BsTelegram,
   BsFillArrowRightCircleFill,
+  BsLinkedin,
 } from "react-icons/bs";
 
 const infoDatas = [
@@ -66,16 +67,23 @@ export default function Info() {
 
         <Link
           href="https://www.facebook.com/loonhtet11.11/"
-          className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
+          className="flex items-center bg-blue-600 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsFacebook className="text-2xl" />
         </Link>
 
         <Link
           href="https://t.me/loonhtet"
-          className="flex items-center bg-indigo-800 text-white gap-2 px-4 py-2 rounded-full"
+          className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsTelegram className="text-2xl" />
+        </Link>
+
+        <Link
+          href="https://www.linkedin.com/in/loon-htet-baa4a02b2/"
+          className="flex items-center bg-blue-700 text-white gap-2 px-4 py-2 rounded-full"
+        >
+          <BsLinkedin className="text-2xl" />
         </Link>
 
         <Link
@@ -85,13 +93,13 @@ export default function Info() {
           <AiFillMail className="text-2xl" />
         </Link>
 
-        <Link
-          href=""
-          download={"../public/CV.pdf"}
+        <a
+          href={"/CV.pdf"}
+          download="/Resume.pdf"
           className="flex items-center bg-emerald-700 text-white gap-2 px-4 py-2 rounded-full"
         >
           <BsFileEarmarkPersonFill className="text-2xl" />
-        </Link>
+        </a>
       </div>
 
       <CareerObj />

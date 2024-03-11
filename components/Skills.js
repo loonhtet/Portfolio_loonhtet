@@ -4,27 +4,48 @@ export default function Skills() {
   const skillsData = [
     {
       src: "/html.svg",
+      des: "HTML",
+      status: "confidient",
     },
     {
       src: "/css3.svg",
+      des: "CSS",
+      status: "confidient",
     },
     {
       src: "/javascript.svg",
+      des: "JavaScript",
+      status: "confidient",
     },
     {
       src: "/jquery.svg",
+      des: "jQuery",
+      status: "confidient",
     },
     {
       src: "/bootstrap.svg",
+      des: "Bootstrap",
+      status: "confidient",
     },
     {
       src: "/tailwind.svg",
+      des: "Tailwind",
+      status: "confidient",
     },
     {
       src: "/github.svg",
+      des: "Github",
+      status: "confidient",
     },
     {
       src: "/react.svg",
+      des: "React",
+      status: "confidient",
+    },
+    {
+      src: "/php.svg",
+      des: "Php",
+      status: "Learning",
     },
   ];
 
@@ -37,10 +58,19 @@ export default function Skills() {
           {skillsData.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-100 dark:bg-gray-900 rounded-lg p-6 border border-gray-100 dark:border-blue-800 transition-transform ease-in-out duration-300 transform hover:scale-105"
+              className={`bg-gray-100 dark:bg-gray-900 dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
             >
-              <div className="flex justify-center items-center">
-                <Image src={skill.src} alt="" width={50} height={50} />
+              <div className="flex flex-col justify-center items-center gap-1">
+                <Image
+                  src={skill.src}
+                  alt=""
+                  width={50}
+                  height={50}
+                  className="w-12 h-12"
+                />
+                <p className="text-md font-semibold tracking-wider text-center">
+                  {skill.des}
+                </p>
               </div>
             </div>
           ))}
