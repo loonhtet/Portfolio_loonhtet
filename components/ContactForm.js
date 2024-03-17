@@ -89,8 +89,8 @@ function ContactForm() {
 
       <div
         class={`${
-          isSuccess ? "noti-ani" : "opacity-0"
-        } opacity-0 absolute left-1/2 -translate-x-1/2 p-2 bg-green-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
+          isSuccess ? "noti-ani-sm noti-ani-md" : "opacity-0"
+        } opacity-0 absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-green-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
         <span class="flex rounded-full text-green-200 dark:text-green-300 bg-green-700 dark:bg-green-950 uppercase px-2 py-1 text-xs font-bold mr-3">
           Sent
@@ -102,8 +102,8 @@ function ContactForm() {
 
       <div
         class={`${
-          isSuccess ? "noti-ani" : "noti-ani"
-        } opacity-0 absolute left-1/2 -translate-x-1/2 p-2 bg-red-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
+          isSuccess ? "noti-ani-sm noti-ani-md" : "opacity-0"
+        } opacity-0 absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-red-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
         <span class="flex rounded-full text-red-200 dark:text-red-300 bg-red-700 dark:bg-red-950 uppercase px-2 py-1 text-xs font-bold mr-3">
           Error

@@ -78,7 +78,7 @@ export default function Home() {
 
             <Link
               href="mailto:loonhtet.dev@gmail.com"
-              className="flex items-center bg-zinc-700 text-white gap-2 px-4 py-2 rounded-full"
+              className="flex items-center bg-slate-800 text-white gap-2 px-4 py-2 rounded-full"
             >
               <AiFillMail className="text-2xl" />
               <p className="hidden md:block font-ptsan">Mail</p>
@@ -87,7 +87,7 @@ export default function Home() {
             <a
               href={"/CV.pdf"}
               download="/Resume.pdf"
-              className="flex items-center bg-emerald-700 text-white gap-2 px-4 py-2 rounded-full"
+              className="flex items-center bg-cyan-700 text-white gap-2 px-4 py-2 rounded-full"
             >
               <BsFileEarmarkPersonFill className="text-2xl" />
               <p className="hidden md:block font-ptsan">Resume</p>
