@@ -53,6 +53,7 @@ function ContactForm() {
             onChange={handleChange}
             className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-slate-950/[.30] outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Name"
+            required
           ></input>
 
           <input
@@ -62,6 +63,7 @@ function ContactForm() {
             onChange={handleChange}
             className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-slate-950/[.30] outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Email"
+            required
           ></input>
         </div>
 
@@ -73,6 +75,7 @@ function ContactForm() {
             onChange={handleChange}
             className="w-full block bg-gray-200 dark:bg-slate-950/[.30] p-4 font-conden rounded-md outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Message"
+            required
           ></textarea>
         </div>
         <div className="flex justify-end">
@@ -90,7 +93,7 @@ function ContactForm() {
       <div
         class={`${
           isSuccess ? "noti-ani-sm noti-ani-md" : "opacity-0"
-        } opacity-0 absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-green-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
+        } absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-green-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
         <span class="flex rounded-full text-green-200 dark:text-green-300 bg-green-700 dark:bg-green-950 uppercase px-2 py-1 text-xs font-bold mr-3">
           Sent
@@ -102,8 +105,8 @@ function ContactForm() {
 
       <div
         class={`${
-          isSuccess ? "noti-ani-sm noti-ani-md" : "opacity-0"
-        } opacity-0 absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-red-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
+          isError ? "noti-ani-sm noti-ani-md" : "opacity-0"
+        } absolute md:left-1/2 md:-translate-x-1/2 p-2 bg-red-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
         <span class="flex rounded-full text-red-200 dark:text-red-300 bg-red-700 dark:bg-red-950 uppercase px-2 py-1 text-xs font-bold mr-3">
           Error
