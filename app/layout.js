@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
         />
       </Head>
 
-      <body className={`dark:bg-[#070a11]`}>
+      <body
+        className={`dark:bg-[#070a11] relative bg-gradient-to-b from-blue-400/[.20] via-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
+      >
         <Provider>
           <Navbar />
           <div>{children}</div>

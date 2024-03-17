@@ -58,7 +58,7 @@ export default function Skills() {
           {skillsData.map((skill, index) => (
             <div
               key={index}
-              className={`bg-gray-100 dark:bg-gray-900 dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
+              className={`bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
             >
               <div className="flex flex-col justify-center items-center gap-1">
                 <Image

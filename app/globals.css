@@ -98,38 +98,29 @@ body {
 } */
 
 .noti-ani {
-  top: 0%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, 0%);
-
+  animation: notiAni 6s ease-out;
   opacity: 0;
-
-  animation: notiAni 3s ease-out;
 }
 
 @keyframes notiAni {
   0% {
-    opacity: 0;
-    transform: translate(-50%, 0%);
+    opacity: 1;
+    transform: translateX(-50%) scale(0.2);
   }
-
+  5% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.05);
+  }
   10% {
     opacity: 1;
-    transform: translate(-50%, 100px);
+    transform: translateX(-50%) scale(1);
   }
-
   90% {
     opacity: 1;
-    transform: translate(-50%, 100px);
+    transform: translateX(-50%) scale(1);
   }
-
-  98% {
-    opacity: 0;
-    transform: translate(-50%, 100px);
-  }
-
   100% {
     opacity: 0;
+    transform: translateX(-50%) scale(0.2);
   }
 }

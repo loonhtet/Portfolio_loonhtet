@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { BiErrorCircle } from "react-icons/bi";
 
 function ContactForm() {
   emailjs.init("zCC6qrGnAMBqNy0Ee");
@@ -53,7 +51,7 @@ function ContactForm() {
             name="user_name"
             value={formData.name}
             onChange={handleChange}
-            className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-gray-900 outline-none border-b-2 border-transparent focus:border-blue-500"
+            className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-slate-950/[.30] outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Name"
           ></input>
 
@@ -62,7 +60,7 @@ function ContactForm() {
             name="user_email"
             value={formData.email}
             onChange={handleChange}
-            className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-gray-900 outline-none border-b-2 border-transparent focus:border-blue-500"
+            className="block md:inline w-full px-4 py-2 font-conden rounded-md bg-gray-200 dark:bg-slate-950/[.30] outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Email"
           ></input>
         </div>
@@ -73,36 +71,47 @@ function ContactForm() {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full block bg-gray-200 dark:bg-gray-900 p-4 font-conden rounded-md outline-none border-b-2 border-transparent focus:border-blue-500"
+            className="w-full block bg-gray-200 dark:bg-slate-950/[.30] p-4 font-conden rounded-md outline-none border-2 dark:border-blue-500/[.30]"
             placeholder="Message"
           ></textarea>
         </div>
         <div className="flex justify-end">
-          <input
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 font-ptsan font-semibold text-white px-4 py-2 mt-4 rounded-md duration-100"
-            disabled={isSending} // Disable the button while sending
-            value={isSending ? "Sending..." : "Send Message"}
-          />
+          <button class="relative inline-flex items-center justify-center p-0.5 mt-5 overflow-hidden text-sm font-medium text-slate-950 rounded-md group bg-gradient-to-br from-blue-500 to-blue-800 dark:from-blue-400 dark:to-blue-900 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <input
+              type="submit"
+              className="relative cursor-pointer px-5 py-2.5 transition-all ease-in duration-100 bg-white dark:bg-slate-950 rounded-md group-hover:bg-opacity-0"
+              disabled={isSending} // Disable the button while sending
+              value={isSending ? "Sending..." : "Send Message"}
+            />
+          </button>
         </div>
       </form>
 
       <div
-        className={`${
+        class={`${
           isSuccess ? "noti-ani" : "opacity-0"
-        } absolute flex justify-center items-center gap-1 w-max px-4 py-1 shadow-2xl shadow-green-100 bg-green-100 border-green-300 text-xl font-cabin font-semibold text-green-900  border-2 dark:border-green-800 dark:bg-green-950 dark:text-green-100 rounded-md`}
+        } opacity-0 absolute left-1/2 -translate-x-1/2 p-2 bg-green-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
-        <IoMdCheckmarkCircleOutline />
-        Sent!
+        <span class="flex rounded-full text-green-200 dark:text-green-300 bg-green-700 dark:bg-green-950 uppercase px-2 py-1 text-xs font-bold mr-3">
+          Sent
+        </span>
+        <span class="font-semibold mr-2 text-left flex-auto text-green-900 dark:text-green-300">
+          Thank you for reaching out! I&apos;ll respond as soon as I can.
+        </span>
       </div>
 
       <div
-        className={`${
-          isError ? "noti-ani" : "opacity-0"
-        } absolute flex justify-center items-center gap-1 w-max px-4 py-1 shadow-2xl shadow-green-100 bg-green-100 border-green-300 text-xl font-cabin font-semibold text-green-900 dark:bg-green-950 border-2 dark:border-green-800 dark:text-green-100 rounded-md`}
+        class={`${
+          isSuccess ? "noti-ani" : "noti-ani"
+        } opacity-0 absolute left-1/2 -translate-x-1/2 p-2 bg-red-300/50 dark:bg-slate-950/50 items-center text-indigo-100 leading-none rounded-full flex lg:inline-flex`}
       >
-        <IoMdCheckmarkCircleOutline />
-        Error!
+        <span class="flex rounded-full text-red-200 dark:text-red-300 bg-red-700 dark:bg-red-950 uppercase px-2 py-1 text-xs font-bold mr-3">
+          Error
+        </span>
+        <span class="font-semibold mr-2 text-left flex-auto text-red-900 dark:text-red-300">
+          Failed to reach me here! Please connect with me on another social
+          platform.
+        </span>
       </div>
     </div>
   );
