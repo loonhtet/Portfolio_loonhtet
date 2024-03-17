@@ -21,5 +21,5 @@ module.exports = {
       conden: ["Roboto Condensed", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
