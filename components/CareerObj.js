@@ -4,7 +4,7 @@ export const CareerObj = () => {
   const careerDatas = [
     {
       careertext:
-        "Experienced Web Developer proficient in HTML, CSS, JavaScript, jQuery, Bootstrap, Tailwind, and React. Well-versed in version control with GitHub. Eager to contribute technical skills and creativity to create engaging and responsive web experiences. Seeking opportunities to stay abreast of industry trends and work on innovative projects.",
+        "I have been learning web development since 2021. An experienced front-end developer seeking a junior position to enhance my technical skills and my passion for creating user-friendly websites. Eager to learn from experienced developers and contribute to a collaborative team environment.",
     },
   ];
 
