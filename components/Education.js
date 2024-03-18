@@ -1,6 +1,12 @@
 export default function Education() {
   const educationData = [
     {
+      year: "2021 - 2021",
+      skill: "Linux Course",
+      school: "Ye Lin Aung - OpenLab",
+      status: "Finished",
+    },
+    {
       year: "2021 - 2024",
       skill: "Web Development",
       school: "Data Land Technology",

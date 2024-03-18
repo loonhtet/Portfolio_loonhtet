@@ -47,6 +47,11 @@ export default function Skills() {
       des: "Php",
       status: "Learning",
     },
+    {
+      src: "/linux.svg",
+      des: "Linux",
+      status: "confidient",
+    },
   ];
 
   return (
