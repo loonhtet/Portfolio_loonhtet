@@ -40,7 +40,7 @@ export default function Home() {
               Loon Htet
             </h1>
             <h2 className="text-2xl mt-4 font-ptsan text-center md:text-left">
-              Front-End Developer
+              Web Developer
             </h2>
             {/* <FaQuoteRight className="absolute right-0 md:-right-5 -bottom-5 text-xl md:text-3xl" /> */}
           </div>
