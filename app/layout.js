@@ -10,7 +10,7 @@ import Head from "next/head";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "LoonHtet_Portfolio",
+  title: "Loon Htet",
   description:
     "I'm always eager to collaborate on exciting new projects. If my work resonates with your vision, feel free to reach out. Let's turn your ideas into reality together.",
 };
