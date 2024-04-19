@@ -7,6 +7,7 @@ import {
   BsTelegram,
   BsFillArrowRightCircleFill,
   BsLinkedin,
+  BsSkype,
 } from "react-icons/bs";
 
 const infoDatas = [
@@ -66,10 +67,10 @@ export default function Info() {
         </Link>
 
         <Link
-          href="https://www.facebook.com/loonhtet11.11/"
-          className="flex items-center bg-blue-600 text-white gap-2 px-4 py-2 rounded-full"
+          href="https://join.skype.com/invite/y8bYAczycbLn/"
+          className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
         >
-          <BsFacebook className="text-2xl" />
+          <BsSkype className="text-2xl" />
         </Link>
 
         <Link

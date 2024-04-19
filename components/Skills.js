@@ -52,6 +52,16 @@ export default function Skills() {
       des: "Linux",
       status: "confidient",
     },
+    {
+      src: "/mysql.svg",
+      des: "MySQL",
+      status: "confidient",
+    },
+    {
+      src: "/sql.svg",
+      des: "SQL",
+      status: "confidient",
+    },
   ];
 
   return (

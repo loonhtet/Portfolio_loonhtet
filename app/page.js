@@ -9,6 +9,7 @@ import {
   BsFillArrowRightCircleFill,
   BsMailbox2,
   BsLinkedin,
+  BsSkype,
 } from "react-icons/bs";
 
 import { AiFillMail } from "react-icons/ai";
@@ -53,11 +54,11 @@ export default function Home() {
             </Link>
 
             <Link
-              href="https://www.facebook.com/loonhtet11.11/"
-              className="flex items-center bg-blue-600 text-white gap-2 px-4 py-2 rounded-full"
+              href="https://join.skype.com/invite/y8bYAczycbLn"
+              className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
             >
-              <BsFacebook className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Facebook</p>
+              <BsSkype className="text-2xl" />
+              <p className="hidden md:block font-ptsan">Skype</p>
             </Link>
 
             <Link
