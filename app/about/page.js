@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 // import { Timeline, TimelineItem } from "tailwind-elements";
 
@@ -18,6 +18,7 @@ import socialMedia from "../../public/socialMedia-icon.png";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Info from "@/components/Info";
+import { CareerObj } from "@/components/CareerObj";
 
 export default function About() {
   return (
@@ -31,6 +32,7 @@ export default function About() {
       </section>
 
       <Info />
+      <CareerObj />
       <Skills />
       <Education />
     </section>

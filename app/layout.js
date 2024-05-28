@@ -2,10 +2,15 @@ import "./globals.css";
 // import { Inter } from "next/font/google";
 import Script from "next/script";
 
+import { ViewTransitions } from "next-view-transitions";
+
 import Provider from "./Provider";
 import Navbar from "@/components/Navbar";
 
 import Head from "next/head";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -44,10 +49,12 @@ export default function RootLayout({ children }) {
       <body
         className={`dark:bg-[#070a11] relative bg-gradient-to-b from-blue-400/[.20] via-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
       >
-        <Provider>
-          <Navbar />
-          <div>{children}</div>
-        </Provider>
+        <ViewTransitions>
+          <Provider>
+            <Navbar />
+            <div>{children}</div>
+          </Provider>
+        </ViewTransitions>
       </body>
     </html>
   );

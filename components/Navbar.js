@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
+
 import {
   BiHomeAlt2,
   BiUser,
@@ -35,7 +36,7 @@ export default function Navbar() {
         className={`fixed z-50 flex justify-center items-center -translate-x-1/2 left-1/2 bottom-0`}
       >
         <ul
-          className={`flex justify-center items-center gap-2 p-2 mb-3 m-3 me-1 md:me-2 border-2 border-blue-600 rounded-full backdrop-blur supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75`}
+          className={`flex justify-center items-center gap-2 p-2 mb-3 m-3 me-1 md:me-2 border-2 border-blue-600 rounded-full backdrop-blur dark:bg-slate-900/75`}
         >
           <Link href="/" prefetch>
             <li className="bg-blue-600 text-white px-4 py-2 rounded-full">
@@ -49,7 +50,7 @@ export default function Navbar() {
             </li>
           </Link>
 
-          <Link href="/projects" prefetch>
+          <Link href="/projects/" prefetch>
             <li className="bg-blue-600 text-white px-4 py-2 rounded-full">
               <BiRocket className="text-2xl" />
             </li>
