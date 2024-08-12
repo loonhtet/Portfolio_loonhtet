@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Lunna Belle",
+    "content": "This is the blog website using Sanity (Headless CMS)",
+    "headingImg": "/homepage_portfolio.png",
+    "technologies": [
+      {
+        "name": "HTML",
+        "src": "/html.svg"
+      },
+      {
+        "name": "CSS",
+        "src": "/html.svg"
+      },
+      {
+        "name": "JS",
+        "src": "/html.svg"
+      },
+      {
+        "name": "JQUERY",
+        "src": "/html.svg"
+      },
+      {
+        "name": "BOOTSTRAP",
+        "src": "/html.svg"
+      },
+      {
+        "name": "TAILWIND",
+        "src": "/html.svg"
+      },
+      {
+        "name": "GITHUB",
+        "src": "/html.svg"
+      },
+      {
+        "name": "REACT",
+        "src": "/html.svg"
+      },
+      {
+        "name": "PHP",
+        "src": "/html.svg"
+      },
+      {
+        "name": "LINUX",
+        "src": "/html.svg"
+      },
+      {
+        "name": "MYSQL",
+        "src": "/html.svg"
+      },
+      {
+        "name": "SQL",
+        "src": "/html.svg"
+      }
+    ],
+    "firstSection": [
+      {
+        "title": "Home page of the website",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+      }
+    ],
+    "SecondSection": [
+      {
+        "title": "About page of the website",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+      }
+    ],
+    "Links": [
+      {
+        "github": "https://github.com/loonhtet/LunaBelle-Frontend",
+        "live": "https://lunabelle.netlify.app/"
+      }
+    ]
+  }
+]
