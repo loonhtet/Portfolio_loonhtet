@@ -10,6 +10,7 @@ import { PiWaveformBold } from "react-icons/pi";
 import { LuGithub } from "react-icons/lu";
 import Project from "@/components/Project";
 import SmallProject from "@/components/SmallProject";
+import { TestProject } from "@/components/TestProject";
 
 const projectDatas = [
   {
@@ -33,6 +34,7 @@ export default function Projects() {
       </section>
 
       <Project />
+      {/* <TestProject /> */}
       {/* <SmallProject /> */}
     </section>
   );
