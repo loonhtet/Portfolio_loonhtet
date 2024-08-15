@@ -10,7 +10,10 @@ import { PiWaveformBold } from "react-icons/pi";
 import { LuGithub } from "react-icons/lu";
 
 import skill from "../public/skill1.jpg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+import Skeleton from "react-loading-skeleton";
+import { useSearchParams } from "next/navigation";
 
 export default function Project() {
   useEffect(() => {
@@ -84,6 +87,14 @@ export default function Project() {
     },
   ];
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <section className="mt-14">
       {/* <h3 className="text-4xl font-bold font-conden mb-14 uppercase">
@@ -128,13 +139,17 @@ export default function Project() {
               </Link>
             </div>
           </div>
-          <Image
-            className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
-            src={item.image}
-            width={2560}
-            height={1040}
-            alt="Card Image"
-          />
+          {loading ? (
+            <Skeleton height="100%" width="100%" />
+          ) : (
+            <Image
+              className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
+              src={item.image}
+              width={2560}
+              height={1040}
+              alt="Card Image"
+            />
+          )}
 
           {/* <video
             width="1280"
