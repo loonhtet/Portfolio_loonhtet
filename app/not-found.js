@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import pageNotFound from "../public/31.png";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export default function NotFound() {
   return (

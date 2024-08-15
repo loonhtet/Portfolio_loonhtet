@@ -4,7 +4,7 @@ import Image from "next/image";
 import skill1 from "../../public/skill1.jpg";
 import sketch3 from "../../public/sketch3.png";
 
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 import { PiWaveformBold } from "react-icons/pi";
 import { LuGithub } from "react-icons/lu";

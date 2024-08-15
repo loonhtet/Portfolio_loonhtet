@@ -27,7 +27,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 import avatar from "../public/avatar.jpg";
 
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 export default function Home() {
   return (
     <section className="xl:w-4/6 flex flex-col md:flex-row justify-center items-center mx-auto min-h-screen px-5 py-10 md:p-10">

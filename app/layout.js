@@ -6,6 +6,7 @@ import Provider from "./Provider";
 import Navbar from "@/components/Navbar";
 
 import Head from "next/head";
+import { ViewTransitions } from "next-view-transitions";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -17,38 +18,40 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans+Caption&family=Roboto+Condensed&display=swap"
-          rel="stylesheet"
+    <ViewTransitions>
+      <html lang="en" suppressHydrationWarning>
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans+Caption&family=Roboto+Condensed&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-S9G82WC1FB"
         />
-      </Head>
 
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-S9G82WC1FB"
-      />
-
-      <Script id="google-analytics">
-        {`
+        <Script id="google-analytics">
+          {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-S9G82WC1FB');
           `}
-      </Script>
+        </Script>
 
-      <body
-        className={`dark:bg-[#070a11] relative bg-gradient-to-b from-blue-400/[.20] via-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
-      >
-        <Provider>
-          <Navbar />
-          <div>{children}</div>
-        </Provider>
-      </body>
-    </html>
+        <body
+          className={`dark:bg-[#070a11] relative bg-gradient-to-b from-blue-400/[.20] via-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
+        >
+          <Provider>
+            <Navbar />
+            <div>{children}</div>
+          </Provider>
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }
