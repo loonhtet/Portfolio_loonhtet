@@ -23,7 +23,7 @@ const infoDatas = [
 
   {
     info: "address",
-    description: "Dagon Township",
+    description: "Yaw Min Gyi Street, Dagon Township",
   },
 
   {
@@ -33,7 +33,7 @@ const infoDatas = [
 
   {
     info: "phone",
-    description: "09951180654",
+    description: "+959951180654",
   },
 ];
 
