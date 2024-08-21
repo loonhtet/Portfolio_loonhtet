@@ -28,7 +28,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 // import avatar from "../public/avatar.jpg";
 import avatar from "../public/profile-pic.jpg";
-import coding from "../public/coding.png";
+// import coding from "../public/coding.png";
 
 import { Link } from "next-view-transitions";
 
@@ -132,7 +132,7 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
             </span>
-            <span className="text-lg md:text-xl font-bold uppercase">
+            <span className="text-lg md:text-xl font-bold uppercase cursor-default">
               avaliable
             </span>
           </AnimatedShinyText>
