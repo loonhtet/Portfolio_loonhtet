@@ -62,12 +62,12 @@ export default function Navbar() {
           </Link>
         </ul>
 
-        <button
+        {/* <button
           onClick={toggleDarkMode}
           className="bg-gray-700 text-blue-100 dark:bg-blue-100 dark:text-gray-900 px-3 py-3 text-2xl rounded-full"
         >
           {theme === "dark" ? <BiSolidSun /> : <BiSolidMoon />}
-        </button>
+        </button> */}
       </div>
     </nav>
   );
