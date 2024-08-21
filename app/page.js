@@ -128,9 +128,9 @@ export default function Home() {
           )}
         >
           <AnimatedShinyText className="inline-flex items-center justify-center cursor-default gap-x-3 px-4 py-1 transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
-            <span class="relative flex h-auto w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+            <span className="relative flex h-auto w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
             </span>
             <span className="text-lg md:text-xl font-bold uppercase">
               avaliable
@@ -217,7 +217,7 @@ export default function Home() {
           repeatDelay={1}
           className={cn(
             "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+            "inset-x-0 inset-y-[0%] h-[100%] skew-y-12"
           )}
         />
       </div>
