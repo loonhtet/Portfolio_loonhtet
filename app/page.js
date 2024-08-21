@@ -151,8 +151,8 @@ export default function Home() {
           }}
           text={
             <>
-              I'm <b>Loon Htet</b> and I develop fully functional and responsive
-              websites.
+              I&apos;m <b>Loon Htet</b> and I develop fully functional and
+              responsive websites.
             </>
           }
         />
