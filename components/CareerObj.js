@@ -14,7 +14,7 @@ export const CareerObj = () => {
         <div key={index}>
           <h3 className="text-3xl mt-10 mb-5 text-bold font-cabin">About</h3>
 
-          <div className="text-lg tracking-wider font-conden dark:text-blue-100 bg-slate-100 dark:bg-slate-950/[.30] border border-gray-100 dark:border-blue-800 p-6 rounded-lg">
+          <div className="text-lg tracking-wider font-conden dark:text-blue-100 bg-gray-100 dark:bg-slate-950/[.30] border border-gray-100 dark:border-blue-800 p-6 rounded-lg">
             <p>{item.careertext}</p>
           </div>
         </div>

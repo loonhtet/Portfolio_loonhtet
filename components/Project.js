@@ -139,17 +139,14 @@ export default function Project() {
               </Link>
             </div>
           </div>
-          {loading ? (
-            <Skeleton height="100%" width="100%" />
-          ) : (
-            <Image
-              className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
-              src={item.image}
-              width={2560}
-              height={1040}
-              alt="Card Image"
-            />
-          )}
+          <Image
+            rel="preload"
+            className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
+            src={item.image}
+            width={1280}
+            height={720}
+            alt="Card Image"
+          />
 
           {/* <video
             width="1280"
