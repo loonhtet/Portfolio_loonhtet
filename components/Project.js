@@ -15,6 +15,8 @@ import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import { useSearchParams } from "next/navigation";
 
+import BlurFade from "@/components/magicui/blur-fade";
+
 export default function Project() {
   useEffect(() => {
     Aos.init({
@@ -139,14 +141,16 @@ export default function Project() {
               </Link>
             </div>
           </div>
-          <Image
-            rel="preload"
-            className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
-            src={item.image}
-            width={1280}
-            height={720}
-            alt="Card Image"
-          />
+          <BlurFade delay={0.25} inView>
+            <Image
+              rel="preload"
+              className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
+              src={item.image}
+              width={1280}
+              height={720}
+              alt="Card Image"
+            />
+          </BlurFade>
 
           {/* <video
             width="1280"

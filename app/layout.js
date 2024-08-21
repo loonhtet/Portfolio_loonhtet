@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         <body
-          className={`dark:bg-[#070a11] relative bg-gradient-to-b  dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
+          className={`dark dark:bg-[#070a11] relative bg-gradient-to-b  dark:bg-gradient-to-r dark:from-slate-950 dark:via-blue-800/[.20] dark:via-30% dark:to-slate-950`}
         >
           <Provider>
             <Navbar />

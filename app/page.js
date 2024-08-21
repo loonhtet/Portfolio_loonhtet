@@ -132,22 +132,15 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
             </span>
-            <span className="text-lg md:text-xl font-bold uppercase cursor-default">
+            <span className="text-md md:text-xl font-bold uppercase cursor-default">
               avaliable
             </span>
           </AnimatedShinyText>
         </div>
-        {/* <h3 className="text-[2.3em] xs:text-[2.4em] md:text-[5em] lg:text-[6em] xl:text-[8em] uppercase font-bold font-conden md:whitespace-nowrap">
-          Web Developer
-        </h3> */}
         <GradualSpacing
-          className="font-display text-center uppercase text-[2.3em] xs:text-[2.4em] md:text-[5em] lg:text-[6em] xl:text-[8em] font-bold font-conden text-black dark:text-white"
+          className="font-display text-center uppercase text-[2.3em] xs:text-[2.6em] md:text-[5em] lg:text-[6em] xl:text-[8em] font-bold font-conden text-black dark:text-white"
           text="Web Developer"
         />
-        {/* <p className="text-sm lg:text-xl dark:text-gray-300 font-ptsan">
-          I'm <b>Loon Htet</b> and I develop fully functional and responsive
-          websites.
-        </p> */}
         <FadeText
           className="text-md lg:text-2xl text-dark dark:text-gray-400 font-ptsan"
           direction="up"

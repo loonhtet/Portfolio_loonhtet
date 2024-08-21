@@ -131,13 +131,13 @@ export default function Skills() {
   return (
     <section className="mt-14 ">
       <style>{keyframes}</style>
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <h3 className="text-3xl mb-5 text-bold font-cabin">Capabilities</h3>
 
         <div className="grid gap-4">
-          <div className="flex">
+          <div className="flex flex-col md:flex-row gap-y-4">
             <h1 className="w-1/3 md:w-1/2 text-2xl">Frontend</h1>
-            <div className="w-2/3 md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {FrontendSkills.map((item, index) => (
                 <div
                   key={index}
@@ -162,9 +162,9 @@ export default function Skills() {
 
           <div style={styles.animatedLine} className="rounded-full my-4"></div>
 
-          <div className="flex">
+          <div className="flex flex-col md:flex-row gap-y-4">
             <h1 className="w-1/3 md:w-1/2 text-2xl">Backend</h1>
-            <div className="w-2/3 md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {BackendSkills.map((item, index) => (
                 <div
                   key={index}
@@ -188,9 +188,9 @@ export default function Skills() {
           </div>
           <div style={styles.animatedLine} className="rounded-full my-4"></div>
 
-          <div className="flex">
+          <div className="flex flex-col md:flex-row gap-y-4">
             <h1 className="w-1/3 md:w-1/2 text-2xl">Database</h1>
-            <div className="w-2/3 md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {DatabaseSkills.map((item, index) => (
                 <div
                   key={index}
@@ -215,9 +215,9 @@ export default function Skills() {
 
           <div style={styles.animatedLine} className="rounded-full my-4"></div>
 
-          <div className="flex">
+          <div className="flex flex-col md:flex-row gap-y-4">
             <h1 className="w-1/3 md:w-1/2 text-2xl">Additional</h1>
-            <div className="w-2/3 md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {AdditionaleSkills.map((item, index) => (
                 <div
                   key={index}
