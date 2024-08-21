@@ -107,7 +107,7 @@ export default function Project() {
           key={index}
           className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mb-6 lg:mb-16"
         >
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mb-12 lg:mb-0">
             <h3 className="font-conden text-3xl font-bold mt-4 lg:mt-0">
               {item.name}
             </h3>
@@ -141,7 +141,7 @@ export default function Project() {
               </Link>
             </div>
           </div>
-          <BlurFade delay={0.25} inView>
+          <BlurFade delay={0.25} inView className="order-first lg:order-last">
             <Image
               rel="preload"
               className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"

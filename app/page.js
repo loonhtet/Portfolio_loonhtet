@@ -36,7 +36,7 @@ import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { FadeText } from "@/components/magicui/fade-text";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
-
+import BlurFade from "@/components/magicui/blur-fade";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 
 export default function Home() {
@@ -122,21 +122,23 @@ export default function Home() {
     // </section>
     <section className="sm:w-4/5 md:w-4/6 mx-auto min-h-screen px-5 md:px-0 py-10">
       <div className="relative w-full h-[80vh] grid place-content-center text-center gap-4">
-        <div
-          className={cn(
-            "w-fit mx-auto rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-zinc-200 dark:border-white/5 dark:bg-slate-900 dark:hover:bg-slate-800"
-          )}
-        >
-          <AnimatedShinyText className="inline-flex items-center justify-center cursor-default gap-x-3 px-4 py-1 transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
-            <span className="relative flex h-auto w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
-            </span>
-            <span className="text-md md:text-xl font-bold uppercase cursor-default">
-              avaliable
-            </span>
-          </AnimatedShinyText>
-        </div>
+        <BlurFade delay={0.4}>
+          <div
+            className={cn(
+              "w-fit mx-auto rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-zinc-200 dark:border-white/5 dark:bg-slate-900 dark:hover:bg-slate-800"
+            )}
+          >
+            <AnimatedShinyText className="inline-flex items-center justify-center cursor-default gap-x-3 px-4 py-1 transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
+              <span className="relative flex h-auto w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+              </span>
+              <span className="text-md md:text-xl font-bold uppercase cursor-default">
+                avaliable
+              </span>
+            </AnimatedShinyText>
+          </div>
+        </BlurFade>
         <GradualSpacing
           className="font-display text-center uppercase text-[2.3em] xs:text-[2.6em] md:text-[5em] lg:text-[6em] xl:text-[8em] font-bold font-conden text-black dark:text-white"
           text="Web Developer"
@@ -147,8 +149,12 @@ export default function Home() {
           framerProps={{
             show: { transition: { delay: 0.4 } },
           }}
-          text=" I'm Loon Htet and I develop fully functional and responsive
-          websites."
+          text={
+            <>
+              I'm <b>Loon Htet</b> and I develop fully functional and responsive
+              websites.
+            </>
+          }
         />
         {/* <div className="w-full flex justify-center items-center absolute bottom-0 left-1/2 -translate-x-1/2">
           <div className="flex flex-wrap gap-x-4 md:gap-x-5 gap-y-3 mt-5 mb-12 md:mb-0">
