@@ -1,6 +1,13 @@
+"use client";
 import Image from "next/image";
 
+import { useTheme } from "next-themes";
+
+import { MagicCard } from "@/components/magicui/magic-card";
+
 export default function Skills() {
+  const { theme } = useTheme();
+
   const FrontendSkills = [
     {
       src: "/html.svg",
@@ -139,9 +146,10 @@ export default function Skills() {
             <h1 className="w-1/3 md:w-1/2 text-2xl">Frontend</h1>
             <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {FrontendSkills.map((item, index) => (
-                <div
+                <MagicCard
                   key={index}
-                  className={`bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
+                  className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
+                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -155,7 +163,7 @@ export default function Skills() {
                       {item.des}
                     </p>
                   </div>
-                </div>
+                </MagicCard>
               ))}
             </div>
           </div>
@@ -166,9 +174,10 @@ export default function Skills() {
             <h1 className="w-1/3 md:w-1/2 text-2xl">Backend</h1>
             <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {BackendSkills.map((item, index) => (
-                <div
+                <MagicCard
                   key={index}
-                  className={`bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
+                  className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
+                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -182,7 +191,7 @@ export default function Skills() {
                       {item.des}
                     </p>
                   </div>
-                </div>
+                </MagicCard>
               ))}
             </div>
           </div>
@@ -192,9 +201,10 @@ export default function Skills() {
             <h1 className="w-1/3 md:w-1/2 text-2xl">Database</h1>
             <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {DatabaseSkills.map((item, index) => (
-                <div
+                <MagicCard
                   key={index}
-                  className={`bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
+                  className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
+                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -208,7 +218,7 @@ export default function Skills() {
                       {item.des}
                     </p>
                   </div>
-                </div>
+                </MagicCard>
               ))}
             </div>
           </div>
@@ -219,9 +229,10 @@ export default function Skills() {
             <h1 className="w-1/3 md:w-1/2 text-2xl">Additional</h1>
             <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-4">
               {AdditionaleSkills.map((item, index) => (
-                <div
+                <MagicCard
                   key={index}
-                  className={`bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800 rounded-lg p-6 border border-gray-100`}
+                  className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
+                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -235,7 +246,7 @@ export default function Skills() {
                       {item.des}
                     </p>
                   </div>
-                </div>
+                </MagicCard>
               ))}
             </div>
           </div>
