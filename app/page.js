@@ -38,6 +38,10 @@ import { FadeText } from "@/components/magicui/fade-text";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import BlurFade from "@/components/magicui/blur-fade";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import { HeroAbout } from "@/components/HeroAbout";
+import { WhatIDo } from "../components/WhatIDo";
+import { HeroContact } from "@/components/HeroContact";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -120,106 +124,11 @@ export default function Home() {
     //     </div>
     //   </div>
     // </section>
-    <section className="sm:w-4/5 md:w-4/6 mx-auto min-h-screen px-5 md:px-0 py-10">
-      <div className="relative w-full h-[80vh] grid place-content-center text-center gap-4">
-        <BlurFade delay={0.4}>
-          <div
-            className={cn(
-              "w-fit mx-auto rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-zinc-200 dark:border-white/5 dark:bg-slate-900 dark:hover:bg-slate-800"
-            )}
-          >
-            <AnimatedShinyText className="inline-flex items-center justify-center cursor-default gap-x-3 px-4 py-1 transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
-              <span className="relative flex h-auto w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
-              </span>
-              <span className="text-md md:text-xl font-bold uppercase cursor-default">
-                avaliable
-              </span>
-            </AnimatedShinyText>
-          </div>
-        </BlurFade>
-        <GradualSpacing
-          className="font-display text-center uppercase text-[2.3em] xs:text-[2.6em] md:text-[5em] lg:text-[6em] xl:text-[8em] font-bold font-conden text-black dark:text-white"
-          text="Web Developer"
-        />
-        <FadeText
-          className="text-md lg:text-2xl text-dark dark:text-gray-400 font-ptsan"
-          direction="up"
-          framerProps={{
-            show: { transition: { delay: 0.4 } },
-          }}
-          text={
-            <>
-              I&apos;m <b>Loon Htet</b> and I develop fully functional and
-              responsive websites.
-            </>
-          }
-        />
-        {/* <div className="w-full flex justify-center items-center absolute bottom-0 left-1/2 -translate-x-1/2">
-          <div className="flex flex-wrap gap-x-4 md:gap-x-5 gap-y-3 mt-5 mb-12 md:mb-0">
-            <Link
-              href="https://github.com/loonhtet"
-              className="flex items-center bg-slate-900 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <BsGithub className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Github</p>
-            </Link>
-
-            <Link
-              href="https://join.skype.com/invite/y8bYAczycbLn"
-              className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <BsSkype className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Skype</p>
-            </Link>
-
-            <Link
-              href="https://t.me/loonhtet"
-              className="flex items-center bg-blue-500 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <BsTelegram className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Telegram</p>
-            </Link>
-
-            <Link
-              href="https://www.linkedin.com/in/loon-htet-baa4a02b2/"
-              className="flex items-center bg-blue-700 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <BsLinkedin className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Linkedin</p>
-            </Link>
-
-            <Link
-              href="mailto:loonhtet.dev@gmail.com"
-              className="flex items-center bg-slate-800 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <AiFillMail className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Mail</p>
-            </Link>
-
-            <a
-              href={"/CV.pdf"}
-              download="/Resume.pdf"
-              className="flex items-center bg-cyan-700 text-white gap-2 px-4 py-2 rounded-full"
-            >
-              <BsFileEarmarkPersonFill className="text-2xl" />
-              <p className="hidden md:block font-ptsan">Resume</p>
-            </a>
-          </div>
-        </div> */}
-
-        <AnimatedGridPattern
-          numSquares={30}
-          maxOpacity={0.1}
-          duration={3}
-          repeatDelay={1}
-          className={cn(
-            "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-            "inset-x-0 inset-y-[0%] h-[100%] skew-y-12"
-          )}
-        />
-      </div>
-    </section>
+    <main>
+      <Hero />
+      <HeroAbout />
+      {/* <WhatIDo /> */}
+      <HeroContact />
+    </main>
   );
 }

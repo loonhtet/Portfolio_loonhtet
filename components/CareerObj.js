@@ -10,7 +10,7 @@ export const CareerObj = () => {
     // },
     {
       careerTextOne:
-        "I’m a web developer who’s all about crafting websites that look amazing and work like a charm. I’ve been diving into the world of web development since 2021, and let’s just say, the grind to level up my skills has been real!",
+        "I’m a web developer who’s all about crafting websites that look amazing and work like a charm. I’ve been diving into the world of web development since 2021.",
       careerTextTwo:
         "I'm excited to learn the new things and keep pushing my skills forward, because let's be real, the developer journey never ends!",
       careerTextThree:
@@ -36,7 +36,6 @@ export const CareerObj = () => {
               delay={9}
               colorFrom="#245ee0"
               colorTo="#007BFF"
-              className={`shadow-2xl`}
             />
           </div>
         </div>
