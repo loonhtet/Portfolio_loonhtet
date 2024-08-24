@@ -17,9 +17,10 @@ export const HeroAbout = () => {
         </span>
 
         <p className="text-2xl md:text-4xl lg:text-5xl leading-[3rem] md:leading-[4.5rem] lg:leading-[6rem] text-justify text-gray-300">
-          I’ve been a developer for over 3 years now, and in that time, I’ve
-          attended enough online classes and workshops. Currently, I am studying
-          for a degree at university, and once that's done, I'll graduate!
+          I&apos;ve been a developer for over 3 years now, and in that time,
+          I&apos;ve attended enough online classes and workshops. Currently, I
+          am studying for a degree at university, and once that's done, I'll
+          graduate!
         </p>
         <Link
           href={"/About"}
