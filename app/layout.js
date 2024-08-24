@@ -1,7 +1,7 @@
 import "./globals.css";
 // import { Inter } from "next/font/google";
 // import { JetBrains_Mono } from "@next/font/google";
-// import Script from "next/script";
+import Script from "next/script";
 
 import Provider from "./Provider";
 import Navbar from "@/components/Navbar";
