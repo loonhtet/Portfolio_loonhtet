@@ -1,7 +1,7 @@
 import "./globals.css";
 // import { Inter } from "next/font/google";
-import { JetBrains_Mono } from "@next/font/google";
-import Script from "next/script";
+// import { JetBrains_Mono } from "@next/font/google";
+// import Script from "next/script";
 
 import Provider from "./Provider";
 import Navbar from "@/components/Navbar";
@@ -10,9 +10,9 @@ import Head from "next/head";
 import { ViewTransitions } from "next-view-transitions";
 
 // const inter = Inter({ subsets: ["latin"] });
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-});
+// const jetBrainsMono = JetBrains_Mono({
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Loon Htet",
