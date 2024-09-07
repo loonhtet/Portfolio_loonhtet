@@ -39,9 +39,9 @@ import GradualSpacing from "@/components/magicui/gradual-spacing";
 import BlurFade from "@/components/magicui/blur-fade";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { HeroAbout } from "@/components/HeroAbout";
-import { WhatIDo } from "../components/WhatIDo";
 import { HeroContact } from "@/components/HeroContact";
 import { Hero } from "@/components/Hero";
+import { HeroProjects } from "@/components/HeroProjects";
 
 export default function Home() {
   return (
@@ -127,7 +127,7 @@ export default function Home() {
     <main>
       <Hero />
       <HeroAbout />
-      {/* <WhatIDo /> */}
+      {/* <HeroProjects /> */}
       <HeroContact />
     </main>
   );

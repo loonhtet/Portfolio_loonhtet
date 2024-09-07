@@ -9,7 +9,7 @@ import { Link } from "next-view-transitions";
 export const WhatIDo = () => {
   return (
     <main className="sm:w-4/5 md:w-4/6 mx-auto min-h-screen px-5 md:px-0 py-10">
-      <BlurFade inView className="grid gap-8 mt-[20vh] md:mt-[40vh] p-4">
+      <BlurFade inView className="grid gap-8 p-4">
         <span className="uppercase text-lg font-bold ">What I do</span>
         <div className="isolate rounded-xl bg-blue-950/20 shadow-lg ring-1 ring-black/5 h-[650px]"></div>
         <div className="flex items-center justify-between">

@@ -22,17 +22,19 @@ import BlurFade from "@/components/magicui/blur-fade";
 import { Link } from "next-view-transitions";
 
 export const HeroContact = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <BlurFade inView className="mt-[20vh] lg:mt-[40vh] mb-24">
-      <div className="mb-[15vh] lg:mb-[30vh]">
+    <BlurFade inView className="mt-[20vh] lg:mt-[40vh] mb-24 lg:mb-36">
+      <div className="mb-[15vh] lg:mb-[35vh]">
         <VelocityScroll
           text="Let's Connect -->"
           default_velocity={1}
           className="font-jetbrain text-center text-5xl font-bold text-black drop-shadow-sm dark:text-gray-200 md:text-8xl md:leading-[8rem]"
         />
       </div>
-      <div className="sm:w-4/5 md:w-4/6 mx-auto px-5 md:px-0 py-10">
-        <div className="flex justify-between">
+      <div className="grid gap-12 md:gap-16 lg:gap-24 sm:w-4/5 md:w-4/6 mx-auto px-5 md:px-0 py-10">
+        {/* <div className="flex justify-between">
           <div className="text-2xl font-semibold flex items-center gap-x-4">
             Feel Free to Contact Me
             <GoArrowDownRight size={30} />
@@ -54,10 +56,34 @@ export const HeroContact = () => {
               colorTo="#007BFF"
             />
           </Link>
-        </div>
+        </div> */}
 
-        <div className="w-full flex mt-12">
-          <div className="flex flex-wrap gap-x-4 md:gap-x-5 gap-y-3 mt-5 mb-12 md:mb-0">
+        <h1 className="text-center text-4xl lg:text-5xl xl:text-6xl">
+          Let&apos;s have a chat!
+        </h1>
+        {/* 
+        <div className="w-full grid place-content-center">
+          <Link
+            href={"/Contact"}
+            className="relative w-fit h-fit px-4 py-4 overflow-hidden ms-auto rounded-lg bg-slate-950/[.30] hover:bg-blue-950/30 transition ease-linear border-2 border-blue-950 md:shadow-xl"
+          >
+            <span className="flex items-center gap-x-1 text-lg font-semibold">
+              Mail Me
+              <BiSolidChevronRight size={28} />
+            </span>
+            <BorderBeam
+              size={100}
+              borderWidth={2.5}
+              duration={6}
+              delay={5}
+              colorFrom="#245ee0"
+              colorTo="#007BFF"
+            />
+          </Link>
+        </div> */}
+
+        <div className="w-full flex justify-center">
+          <div className="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-x-4 md:gap-x-5 gap-y-3 mt-5 mb-12 md:mb-0">
             <Link
               href="https://github.com/loonhtet"
               className="flex items-center bg-slate-900 text-white gap-2 px-4 py-2 rounded-full"
@@ -108,6 +134,10 @@ export const HeroContact = () => {
             </a>
           </div>
         </div>
+
+        {/* <h2 className="uppercase text-xl text-center font-bold">
+          {currentYear} © Loon Htet
+        </h2> */}
       </div>
     </BlurFade>
   );
