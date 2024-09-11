@@ -126,7 +126,7 @@ export default function Home() {
     // </section>
     <main>
       <Hero />
-      <HeroAbout />
+      {/* <HeroAbout /> */}
       {/* <HeroProjects /> */}
       {/* <HeroContact /> */}
     </main>
