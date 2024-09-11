@@ -44,6 +44,15 @@ export default function Project() {
     },
 
     {
+      image: "/skywardshift-shots.png",
+      name: "SkywardShift",
+      breadcrumbs: ["HTML", "CSS"],
+      description: "",
+      github: "https://github.com/loonhtet/quote",
+      live: "https://quote.on.fleek.co/",
+    },
+
+    {
       image: "/dashboard-shots.png",
       name: "Admin Dashboard",
       breadcrumbs: ["HTML", "CSS", "jQuery", "Bootstrap", "Chart.js"],
@@ -103,7 +112,10 @@ export default function Project() {
         Latest Projects
       </h3> */}
       {projectDatas.map((item, index) => (
-        <div
+        <BlurFade
+          delay={0.4}
+          inView
+          inViewMargin="-200px"
           key={index}
           className="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mb-6 lg:mb-16"
         >
@@ -141,17 +153,14 @@ export default function Project() {
               </Link>
             </div>
           </div>
-          <BlurFade delay={0.25} inView className="order-first lg:order-last">
-            <Image
-              rel="preload"
-              className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
-              src={item.image}
-              width={1280}
-              height={720}
-              alt="Card Image"
-            />
-          </BlurFade>
-
+          <Image
+            rel="preload"
+            className="order-first lg:order-last w-full h-auto rounded-xl border-2 border-blue-400 bg-cover bg-center"
+            src={item.image}
+            width={1280}
+            height={720}
+            alt="Card Image"
+          />
           {/* <video
             width="1280"
             height="960"
@@ -170,7 +179,7 @@ export default function Project() {
             />
             Your browser does not support the video tag.
           </video> */}
-        </div>
+        </BlurFade>
       ))}
     </section>
   );

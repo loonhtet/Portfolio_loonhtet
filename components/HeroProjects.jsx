@@ -1,4 +1,5 @@
 import React from "react";
+import BlurFade from "./magicui/blur-fade";
 
 const projects = [
   {
@@ -28,7 +29,8 @@ export const HeroProjects = () => {
         <div className="relative shadow-4xl shadow-blue-400">
           <div className="grid gap-y-24">
             {projects.map((item, index) => (
-              <div
+              <BlurFade
+                delay={0.4}
                 key={index}
                 className="sticky top-6 group overflow-hidden rounded-xl shadow-lg bg-white hover:bg-opacity-90 transition"
               >
@@ -48,7 +50,7 @@ export const HeroProjects = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </BlurFade>
             ))}
           </div>
         </div>

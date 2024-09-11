@@ -1,6 +1,7 @@
 import React from "react";
 
 import { BsChevronDown } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
 
 import { Link } from "next-view-transitions";
 
@@ -10,6 +11,8 @@ import { FadeText } from "@/components/magicui/fade-text";
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import BlurFade from "@/components/magicui/blur-fade";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import ShimmerButton from "./magicui/shimmer-button";
+import ShinyButton from "./magicui/shiny-button";
 
 export const Hero = () => {
   return (
@@ -50,11 +53,17 @@ export const Hero = () => {
           }
         />
 
-        <BlurFade
-          delay={0.4}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2"
-        >
-          <BsChevronDown className=" animate-bounce" />
+        {/* <ShinyButton text="Download Resume" className={"w-fit mx-auto mt-5"} /> */}
+
+        <BlurFade delay={0.4} className={"mt-12"}>
+          {/* <BsChevronDown className=" animate-bounce" /> */}
+          <a
+            href=""
+            className="flex  items-center gap-x-2 uppercase border border-slate-700 text-slate-300 rounded-md w-fit mx-auto text-sm px-3 py-1.5 md:px-5 md:py-2 hover:bg-slate-950/40 hover:text-white duration-500"
+          >
+            Resume
+            <HiDownload className="text-md" />
+          </a>
         </BlurFade>
 
         <AnimatedGridPattern

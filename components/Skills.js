@@ -149,7 +149,7 @@ export default function Skills() {
                 <MagicCard
                   key={index}
                   className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
-                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
+                  gradientColor="#162a70"
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -177,7 +177,7 @@ export default function Skills() {
                 <MagicCard
                   key={index}
                   className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
-                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
+                  gradientColor="#162a70"
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -204,7 +204,7 @@ export default function Skills() {
                 <MagicCard
                   key={index}
                   className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
-                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
+                  gradientColor="#162a70"
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image
@@ -232,7 +232,7 @@ export default function Skills() {
                 <MagicCard
                   key={index}
                   className="flex-col items-center justify-center shadow-2xl rounded-lg p-6 bg-gray-100 dark:bg-slate-950/[.30] dark:border-blue-800"
-                  gradientColor={theme === "dark" ? "#0f1f52" : "#D9D9D955"}
+                  gradientColor="#162a70"
                 >
                   <div className="flex flex-col justify-center items-center gap-1">
                     <Image

@@ -128,7 +128,7 @@ export default function Home() {
       <Hero />
       <HeroAbout />
       {/* <HeroProjects /> */}
-      <HeroContact />
+      {/* <HeroContact /> */}
     </main>
   );
 }

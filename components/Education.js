@@ -69,7 +69,7 @@ export default function Education() {
       </ol>
 
       <div className="bg-gray-100 dark:bg-slate-950/[.30] border border-gray-100 dark:border-blue-800 rounded-md p-4 mb-16 mt-3 overflow-hidden">
-        <p className="text-2xl font-conden font-semibold text-center capitalize journey-animation tracking-wider">
+        <p className="text-2xl font-conden font-semibold text-center capitalize journey-animation animate-pulse tracking-wider">
           Still Going My Journey...
         </p>
       </div>

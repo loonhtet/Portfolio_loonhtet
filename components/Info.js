@@ -23,7 +23,7 @@ const infoDatas = [
 
   {
     info: "address",
-    description: "Yaw Min Gyi Street, Dagon Township",
+    description: "Yangon, Myanmar",
   },
 
   {
@@ -39,23 +39,32 @@ const infoDatas = [
 
 import { AiFillMail } from "react-icons/ai";
 import { CareerObj } from "./CareerObj";
+import Image from "next/image";
+
+import avatar from "/public/avatar.jpg";
 
 export default function Info() {
   return (
     <section className="mt-14">
       <h3 className="text-3xl mb-5 text-bold font-cabin">Personal Info</h3>
 
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {infoDatas.map((item, index) => (
-          <li key={index}>
-            <p className="inline w-max font-semibold font-ptsan capitalize px-2 py-1 me-2 rounded-md text-blue-800 dark:text-blue-100 bg-blue-100 dark:bg-blue-800">
-              {item.info}
-            </p>
-            <span className="font-semibold font-conden">
-              {item.description}
-            </span>
-          </li>
-        ))}
+      <ul className="grid grid-cols-2 justify-between gap-4">
+        <div className="grid gap-y-4">
+          {infoDatas.map((item, index) => (
+            <li key={index}>
+              <p className="inline w-max font-semibold capitalize px-2 py-1 me-2 rounded-md text-blue-900 dark:text-blue-100 bg-blue-100 dark:bg-blue-800">
+                {item.info}
+              </p>
+              <span className="font-semibold">{item.description}</span>
+            </li>
+          ))}
+        </div>
+        <Image
+          src={avatar}
+          width={200}
+          height={200}
+          className="w-56 h-56 border-2 object-cover border-blue-800 ms-auto rounded-full"
+        />
       </ul>
 
       <div className="flex flex-wrap gap-x-5 gap-y-3 mt-10">
