@@ -3,19 +3,19 @@ import React from 'react';
 export const WorkExperience = () => {
   const experiences = [
     {
-      title: "Intern Web Developer",
+      title: "Web Developer Intern",
       company: "Softcomm",
       description: "Developed an employee management dashboard using Laravel. Assisted in web application development and testing to ensure functionality and usability. Performed system troubleshooting and provided technical user support.",
       currentlyWorking: false,
     },
     {
-      title: "Intern API Developer",
+      title: "API Integration Developer Intern",
       company: "AYA Bank",
       description: "Collaborated on performance optimization. Integrated APIs and managed dynamic content for web applications.",
       currentlyWorking: false,
     },
     {
-      title: "Intern Frontend Developer",
+      title: "Frontend Developer Intern",
       company: "Softnovation",
       description: "Assisted in web application development, focusing on responsive frontend design.",
       currentlyWorking: true,
