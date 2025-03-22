@@ -18,12 +18,12 @@ const infoDatas = [
 
   {
     info: "age",
-    description: 19,
+    description: 20,
   },
 
   {
     info: "address",
-    description: "Yangon, Myanmar",
+    description: "Bangkok, Thailand",
   },
 
   {
@@ -33,7 +33,7 @@ const infoDatas = [
 
   {
     info: "phone",
-    description: "+959951180654",
+    description: "+959951180654, +66917303800",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function Info() {
     <section className="mt-14">
       <h3 className="text-3xl mb-5 text-bold font-cabin">Personal Info</h3>
 
-      <ul className="grid grid-cols-2 justify-between gap-4">
+      <ul className="grid grid-cols-1 md:grid-cols-2 justify-between gap-4">
         <div className="grid gap-y-4">
           {infoDatas.map((item, index) => (
             <li key={index}>
@@ -112,7 +112,7 @@ export default function Info() {
         </a>
       </div>
 
-      <CareerObj />
+      {/* <CareerObj /> */}
     </section>
   );
 }

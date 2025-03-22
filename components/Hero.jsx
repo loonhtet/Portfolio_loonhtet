@@ -58,11 +58,12 @@ export const Hero = () => {
         <BlurFade delay={0.4} className={"mt-12"}>
           {/* <BsChevronDown className=" animate-bounce" /> */}
           <a
-            href=""
-            className="flex  items-center gap-x-2 uppercase border border-slate-700 text-slate-300 rounded-md w-fit mx-auto text-sm px-3 py-1.5 md:px-5 md:py-2 hover:bg-slate-950/40 hover:text-white duration-500"
+            href="/Loon Htet's CV.pdf"
+            class="flex items-center gap-x-2 uppercase border border-slate-700 text-slate-300 rounded-md w-fit mx-auto text-sm px-3 py-1.5 md:px-5 md:py-2 hover:bg-slate-950/40 hover:text-white duration-500"
+            download="Loon Htet's CV.pdf"
           >
             Resume
-            <HiDownload className="text-md" />
+            <HiDownload class="text-md" />
           </a>
         </BlurFade>
 

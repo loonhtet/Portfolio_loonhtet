@@ -18,6 +18,7 @@ import socialMedia from "../../public/socialMedia-icon.png";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Info from "@/components/Info";
+import { WorkExperience } from "@/components/WorkExperience";
 
 export default function About() {
   return (
@@ -31,6 +32,7 @@ export default function About() {
       </section>
 
       <Info />
+      <WorkExperience />
       <Skills />
       <Education />
     </section>

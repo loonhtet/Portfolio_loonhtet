@@ -25,8 +25,8 @@ export default function Skills() {
       status: "confidient",
     },
     {
-      src: "/jquery.svg",
-      des: "jQuery",
+      src: "/typescript.svg",
+      des: "Typescript",
       status: "confidient",
     },
     {
@@ -63,6 +63,11 @@ export default function Skills() {
     {
       src: "/php.svg",
       des: "Php",
+      status: "Learning",
+    },
+    {
+      src: "/laravel.svg",
+      des: "Laravel",
       status: "Learning",
     },
     {

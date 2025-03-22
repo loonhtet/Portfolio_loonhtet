@@ -4,14 +4,10 @@ import { GoArrowDownRight } from "react-icons/go";
 import { BiSolidChevronRight } from "react-icons/bi";
 import {
   BsGithub,
-  BsFacebook,
   BsFileEarmarkPersonFill,
   BsTelegram,
-  BsFillArrowRightCircleFill,
-  BsMailbox2,
   BsLinkedin,
   BsSkype,
-  BsChevronDown,
 } from "react-icons/bs";
 import { AiFillMail } from "react-icons/ai";
 

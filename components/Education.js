@@ -10,7 +10,7 @@ export default function Education() {
       year: "2021 - 2024",
       skill: "Web Development",
       school: "Data Land Technology",
-      status: "Progress",
+      status: "Finished",
     },
     {
       year: "2023 - 2023",
@@ -21,6 +21,12 @@ export default function Education() {
     {
       year: "2023 - 2024",
       skill: "Level 4 NCC Diploma",
+      school: "KMD Institute",
+      status: "Finished",
+    },
+    {
+      year: "2024 - 2025",
+      skill: "Level 5 NCC Diploma",
       school: "KMD Institute",
       status: "Progress",
     },
@@ -58,9 +64,9 @@ export default function Education() {
             <div
               className={`w-max ${
                 item.status === "Finished"
-                  ? "bg-green-100 text-green-800"
-                  : "bg-yellow-100 text-yellow-800"
-              } px-2 mt-2 ms-1 font-conden text-sm font-semibold rounded-md`}
+                  ? "bg-teal-950 text-teal-200"
+                  : "bg-yellow-950 text-yellow-200"
+              } px-2 py-[2px] mt-2 ms-1 font-conden text-xs font-semibold rounded-md`}
             >
               {item.status}
             </div>
